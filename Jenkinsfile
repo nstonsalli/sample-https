@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    tools {
-        maven 'maven-3.6.1'
-    }
     stages {
        
         stage('Deploy CloudHub') {
