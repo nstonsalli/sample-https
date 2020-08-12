@@ -13,9 +13,10 @@
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<cloudhub.application.name>mule-${anypoint.environment}-${project.artifactId}</cloudhub.application.name>
 
-		<app.runtime>4.2.2</app.runtime>
-		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
+		<app.runtime>${mule.version}</app.runtime>
+		<mule.maven.plugin.version>3.1.6</mule.maven.plugin.version>
 	</properties>
 
 	<build>
@@ -28,8 +29,56 @@
 				<configuration>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.mule.tools.maven</groupId>
+				<artifactId>mule-maven-plugin</artifactId>
+				<version>${mule.maven.plugin.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<cloudHubDeployment>
+						<uri>https://anypoint.mulesoft.com</uri>
+						<muleVersion>${mule.version}</muleVersion>
+						<username>${username}</username>
+						<password>${password}</password>
+						<applicationName>${cloudhub.application.name}</applicationName>
+						<businessGroup>Org</businessGroup>
+						<environment>${environment}</environment>
+						<properties>
+							<env>${anypoint.environment}</env>
+						</properties>
+						
+						
+					</cloudHubDeployment>
+				</configuration>
+<!-- 				<executions>
+					<execution>
+						<id>deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions> -->
+			</plugin>
+<!-- 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>3.0.0-M1</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin> -->
 		</plugins>
 	</build>
+	
+<!-- 	<profiles>
+		<profile>
+			<id>sample-environment-id</id>
+			<properties>
+				<cloudhub.environment>${anypoint.environment}</cloudhub.environment>
+			</properties>
+		</profile>
+	</profiles> -->
 
 	<dependencies>
         <dependency>
