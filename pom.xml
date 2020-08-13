@@ -39,12 +39,12 @@
 						<muleVersion>${mule.version}</muleVersion>
 						<username>tonsallimule</username>
 						<password>1351Apisero</password>
-						<applicationName>${cloudhub.application.name}</applicationName>
+						<applicationName>Test1</applicationName>
 						<businessGroup>Org</businessGroup>
 						<environment>Sandbox</environment>
-						<properties>
+						<!-- <properties>
 							<env>Sandbox</env>
-						</properties>
+						</properties> -->
 						
 						
 					</cloudHubDeployment>
