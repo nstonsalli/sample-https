@@ -37,13 +37,13 @@
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${mule.version}</muleVersion>
-						<username>${username}</username>
-						<password>${password}</password>
+						<username>tonsallimule</username>
+						<password>1351Apisero</password>
 						<applicationName>${cloudhub.application.name}</applicationName>
 						<businessGroup>Org</businessGroup>
-						<environment>${environment}</environment>
+						<environment>Sandbox</environment>
 						<properties>
-							<env>${anypoint.environment}</env>
+							<env>Sandbox</env>
 						</properties>
 						
 						
