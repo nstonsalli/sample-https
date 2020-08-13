@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    stage {
         stage('Deploy CloudHub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'anypoint', passwordVariable:'pass', usernameVariable:'user')]){ 
