@@ -38,7 +38,7 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>${mule.version}</muleVersion>
 						<username>${anypoint.username}</username>
-						<password>1351Apisero</password>
+						<password>${anypoint.password}</password>
 						<applicationName>${cloudhub.application.name}</applicationName>
 						<businessGroup>Org</businessGroup>
 						<environment>${anypoint.environment}</environment>	
