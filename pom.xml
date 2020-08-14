@@ -36,7 +36,7 @@
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>4.2.2</muleVersion>
+						<muleVersion>${mule.version}</muleVersion>
 						<username>tonsallimule</username>
 						<password>1351Apisero</password>
 						<applicationName>${cloudhub.application.name}</applicationName>
