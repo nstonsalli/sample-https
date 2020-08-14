@@ -41,7 +41,7 @@
 						<password>1351Apisero</password>
 						<applicationName>${cloudhub.application.name}</applicationName>
 						<businessGroup>Org</businessGroup>
-						<environment>Sandbox</environment>	
+						<environment>${anypoint.environment}</environment>	
 					</cloudHubDeployment>
 				</configuration>
  				<executions>
