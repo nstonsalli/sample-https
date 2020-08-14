@@ -4,7 +4,7 @@ pipeline {
         stage('Deploy CloudHub') {
             steps {
                 withCredentials([usernamePassword(credentialsId: 'anypoint', passwordVariable:'pass', usernameVariable:'user')]){ 
-                bat "mvn clean package deploy -DskipTests=true -Danypoint.environment=Sandbox -Dmule.version=4.2.2 -Danypoint.username=$user -Danypoint.password=$pass"
+                bat "mvn clean package deploy -DskipTests=true -Danypoint.environment=Sandbox -Dmule.version=4.2.2 -Danypoint.username=$user -Danypoint.password=$pass -Danypoint.org=Org"
                 }
                 
                 }
