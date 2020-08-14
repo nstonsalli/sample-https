@@ -13,7 +13,7 @@
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<cloudhub.application.name>mule-${environment}-${project.artifactId}</cloudhub.application.name>
+		<cloudhub.application.name>mule-${anypoint.environment}-${project.artifactId}</cloudhub.application.name>
 
 		<app.runtime>${mule.version}</app.runtime>
 		<mule.maven.plugin.version>3.1.6</mule.maven.plugin.version>
