@@ -40,7 +40,7 @@
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
 						<applicationName>${cloudhub.application.name}</applicationName>
-						<businessGroup>Org</businessGroup>
+						<businessGroup>${anypoint.org}</businessGroup>
 						<environment>${anypoint.environment}</environment>	
 					</cloudHubDeployment>
 				</configuration>
